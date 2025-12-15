@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Motion-Driven Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Import map reserved for potential libraries -->
+  <script type="importmap">
+    {
+      "imports": {}
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="logo">MC</a>
+      <nav class="nav">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Designing smooth, story‑driven <span>digital experiences</span>.
+          </h1>
+          <p class="hero-subtitle">
+            I craft interactive products where motion, detail, and narrative
+            turn ideas into memorable interfaces.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" id="viewWorkBtn">
+              <span>View Featured Work</span>
+              <span class="btn-ripple"></span>
+            </button>
+            <button class="btn-ghost" id="contactBtn">Let’s collaborate</button>
+          </div>
+        </div>
+        <div class="hero-preview">
+          <div class="preview-frame floating">
+            <div class="preview-header">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="preview-body">
+              <div class="preview-tile tile-1"></div>
+              <div class="preview-tile tile-2"></div>
+              <div class="preview-tile tile-3"></div>
+              <div class="preview-scroll-indicator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-projects">
+      <div class="section-header">
+        <h2>Animated Project Showcases</h2>
+        <p>Each project is built as a small interactive story, tuned with motion and detail.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project cards -->
+        <article class="project-card" data-project-id="1">
+          <div class="project-preview motion-loop loop-1">
+            <div class="loop-layer layer-bg"></div>
+            <div class="loop-layer layer-orbit"></div>
+            <div class="loop-layer layer-pulse"></div>
+          </div>
+          <div class="project-body">
+            <h3>Immersive Product Launch Microsite</h3>
+            <p>A scroll‑driven narrative with parallax storytelling, reveal animations, and subtle micro‑interactions.</p>
+            <div class="project-meta">
+              <span>Interactive Storytelling</span>
+              <span>Web · Motion</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-id="2">
+          <div class="project-preview motion-loop loop-2">
+            <div class="loop-layer layer-bars"></div>
+            <div class="loop-layer layer-highlight"></div>
+          </div>
+          <div class="project-body">
+            <h3>Data‑Rich Dashboard Interface</h3>
+            <p>A motion‑guided analytics dashboard with animated states, hover feedback, and responsive layout.</p>
+            <div class="project-meta">
+              <span>Product Design</span>
+              <span>UI · Animation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-id="3">
+          <div class="project-preview motion-loop loop-3">
+            <div class="loop-layer layer-cards"></div>
+            <div class="loop-layer layer-trail"></div>
+          </div>
+          <div class="project-body">
+            <h3>Creative Portfolio Experience</h3>
+            <p>A card‑based portfolio with tilt interactions, layered depth, and scene‑to‑scene transitions.</p>
+            <div class="project-meta">
+              <span>Experience Design</span>
+              <span>Portfolio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-id="4">
+          <div class="project-preview motion-loop loop-4">
+            <div class="loop-layer layer-device"></div>
+            <div class="loop-layer layer-glow"></div>
+          </div>
+          <div class="project-body">
+            <h3>Mobile Interaction Prototype</h3>
+            <p>A series of micro‑interactions and gestures built for rapid testing and high‑fidelity user flows.</p>
+            <div class="project-meta">
+              <span>Prototyping</span>
+              <span>Mobile · Motion</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-about">
+      <div class="section-header">
+        <h2>About & Skills</h2>
+        <p>Blending interaction design, motion, and storytelling into cohesive product experiences.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-timeline">
+          <h3>Journey</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2021 — Now</span>
+                <h4>Senior Product Designer</h4>
+                <p>Leading motion‑driven feature work and prototyping for product teams.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2018 — 2021</span>
+                <h4>UI / Motion Designer</h4>
+                <p>Created interface systems, micro‑interactions, and interactive launches.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2015 — 2018</span>
+                <h4>Visual Designer</h4>
+                <p>Worked across branding, visual identity, and web experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-skills">
+          <h3>Skill Graph</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-header">
+                <span>Interaction & Motion</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-level="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Product & UX</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-level="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Visual & Systems Design</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-level="88"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Prototyping</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-skill-level="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-tags">
+            <span class="tag">Micro‑interactions</span>
+            <span class="tag">Lottie & Motion Systems</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="section-header">
+        <h2>Let’s build something moving</h2>
+        <p>Whether you’re shipping a product or crafting a one‑off experience, I’d love to hear about it.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <form class="contact-form" autocomplete="off">
+            <div class="field">
+              <label for="name">Name</label>
+              <div class="field-input">
+                <input id="name" type="text" placeholder="Your name" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <div class="field-input">
+                <input id="email" type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="project">Project snapshot</label>
+              <div class="field-input">
+                <textarea id="project" rows="3" placeholder="Timeline, goals, and what you'd like to create."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="fakeSubmit">
+              <span>Send intro</span>
+              <span class="btn-ripple"></span>
+            </button>
+            <p class="form-note">This demo doesn’t send emails, but shows how interactions could feel.</p>
+          </form>
+        </div>
+
+        <div class="contact-meta">
+          <h3>Connect</h3>
+          <div class="contact-icons">
+            <button class="icon-button">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7.5 3h9a4.5 4.5 0 0 1 4.5 4.5v9A4.5 4.5 0 0 1 16.5 21h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 2A2.5 2.5 0 0 0 5 7.5v9A2.5 2.5 0 0 0 7.5 19h9a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 16.5 5h-9Zm9.25 1.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                </svg>
+              </span>
+              <span class="icon-label">Dribbble</span>
+            </button>
+            <button class="icon-button">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 3a6 6 0 0 0-6 6c0 2.64 1.69 4.88 4.06 5.68-.06-.48-.06-1.2.01-1.71l.43-2.87S7.2 9.7 7.2 8.95c0-.96.56-1.68 1.26-1.68.59 0 .88.44.88.97 0 .59-.38 1.47-.58 2.29-.17.69.36 1.25 1.05 1.25 1.26 0 2.22-1.33 2.22-3.25 0-1.7-1.22-2.89-2.97-2.89A3.42 3.42 0 0 0 6.5 7.3a.6.6 0 0 1-.77.3c-.26-.1-.35-.37-.26-.63A4.63 4.63 0 0 1 9 4.5c2.5 0 4.41 1.8 4.41 4.33 0 2.46-1.55 4.45-3.7 4.45-.72 0-1.4-.37-1.63-.8l-.44 1.68c-.16.6-.6 1.35-.9 1.81A6 6 0 0 0 9 21a6 6 0 1 0 0-12Z" />
+                </svg>
+              </span>
+              <span class="icon-label">LinkedIn</span>
+            </button>
+            <button class="icon-button">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 4a3 3 0 0 0-3 3v10.25C2 18.66 3.34 20 4.75 20h10.5A2.75 2.75 0 0 0 18 17.25V17h1.25A2.75 2.75 0 0 0 22 14.25v-7.5A2.75 2.75 0 0 0 19.25 4H5Zm0 1.5h14.25c.69 0 1.25.56 1.25 1.25v7.5c0 .69-.56 1.25-1.25 1.25H18V9.75C18 8.34 16.66 7 15.25 7H5V5.5Zm0 3.25h10.25c.69 0 1.25.56 1.25 1.25v7.25c0 .69-.56 1.25-1.25 1.25H4.75C4.06 19.5 3.5 18.94 3.5 18.25v-9.5H5Zm2 2a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H7Z" />
+                </svg>
+              </span>
+              <span class="icon-label">Email</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-close-modal></div>
+    <div class="project-modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <div class="modal-inner">
+        <div class="modal-visual">
+          <div class="modal-loop" id="modalLoop"></div>
+        </div>
+        <div class="modal-content">
+          <h3 class="modal-title" id="modalTitle">Project title</h3>
+          <p class="modal-subtitle" id="modalSubtitle">Short narrative about the project.</p>
+          <ul class="modal-list" id="modalDetails"></ul>
+          <div class="modal-footer">
+            <button class="btn-ghost" data-close-modal>Back to projects</button>
+            <button class="btn-primary">
+              <span>View live concept</span>
+              <span class="btn-ripple"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+
